@@ -1,0 +1,139 @@
+
+.App {
+  display:flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-child {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.spinner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3; /* Spinner color */
+  border-top: 5px solid #3498db; /* Spinner highlight color */
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.comment-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.discussion-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.comment {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.user-email {
+  font-weight: bold;
+}
+
+.replies {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.replies-heading {
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.reply {
+  font-size: 14px;
+  margin: 0;
+}
+
+.reply-button {
+  background: none;
+  color: #007bff; /* Light blue color - you can change this to your preference */
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: auto;
+  
+}
+
+/* Styling for the reply button on hover */
+.reply-button:hover {
+  text-decoration: underline;
+}
+
+/* styles.css */
+
+/* CommentForm Styles */
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.comment-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
